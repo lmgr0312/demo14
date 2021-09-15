@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* geosoft_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-03 06:29+0000\n"
+"PO-Revision-Date: 2021-07-03 06:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: geosoft_custom
+#: model_terms:ir.ui.view,arch_db:geosoft_custom.sale_order_geosoft_custom_form
+msgid "<span class=\"o_stat_text\">In Purchase Orders</span>"
+msgstr "<span class=\"o_stat_text\">En órdenes de compra</span>"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_sale_order__purchase_order_analytic_total
+msgid ""
+"Amount total of Purchase Order with same Analytic Account of the Sale Order"
+msgstr ""
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_purchase_order__account_analytic_id
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_crm_lead__currency_rate
+msgid "Conversion Rate"
+msgstr "Tipo de Cambio"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,help:geosoft_custom.field_crm_lead__currency_rate
+msgid "Conversion rate of current day"
+msgstr "Tipo de Cambio del día"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_crm_lead__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:geosoft_custom.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:geosoft_custom.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_crm_lead__id
+#: model:ir.model.fields,field_description:geosoft_custom.field_purchase_order__id
+#: model:ir.model.fields,field_description:geosoft_custom.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:geosoft_custom.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:geosoft_custom.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: geosoft_custom
+#: model:ir.model,name:geosoft_custom.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_sale_order__purchase_order_analytic_count
+msgid "Number of Purchase Order with same Analytic Account of the Sale Order"
+msgstr "Número de ordenes de compra con la misma cuenta analitica"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_sale_order__project_path
+msgid "Project Path"
+msgstr "Ruta de Proyecto"
+
+#. module: geosoft_custom
+#: model:ir.model,name:geosoft_custom.model_purchase_order
+msgid "Purchase Order"
+msgstr "Orden de Compra"
+
+#. module: geosoft_custom
+#: code:addons/geosoft_custom/models/sale_order.py:0
+#, python-format
+msgid "Purchase Order(s)"
+msgstr "Ordenes de Compra"
+
+#. module: geosoft_custom
+#: model:ir.model,name:geosoft_custom.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: geosoft_custom
+#: model:ir.model.fields,field_description:geosoft_custom.field_crm_lead__won_date
+msgid "Won Date"
+msgstr "Fecha de Ganado"

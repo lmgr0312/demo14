@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="sale_order_geosoft_custom_form">
+        <field name="name">view.sale.order.geosoft.custom.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[@name='order_details']/field[@name='payment_term_id']" position="after">
+                <field name="client_order_ref"/>
+                <field name="project_path"/>
+                <field name="opportunity_id"/>
+            </xpath>
+            <xpath expr="//form[1]/sheet[1]/div[1]" position="inside">
+                <button class="oe_stat_button" type="object" attrs="{'invisible': [ ('purchase_order_analytic_count', '=', 0)]}" name="action_view_purchase_orders_with_analytic" icon="fa-shopping-cart">
+                    <div class="o_field_widget o_stat_info">
+                        <field name="purchase_order_analytic_total"/>
+                        <field name="purchase_order_analytic_count" invisible="1"/>
+                        <span class="o_stat_text">In Purchase Orders</span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="sale_order_geosoft_custom_tree">
+        <field name="name">view.sale.order.geosoft.custom.tree</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='partner_id']" position="before">
+                <field name="currency_id"/>
+            </xpath>
+        </field>
+    </record>
+      <record model="ir.ui.view" id="sale_order_geosoft_custom_tree2">
+        <field name="name">view.sale.order.geosoft.custom.tree2</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='partner_id']" position="before">
+                <field name="currency_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

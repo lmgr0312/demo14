@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="purchase_order_geosoft_custom_tree">
+        <field name="name">view.purchase.order.geosoft.custom.tree</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_kpis_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='partner_id']" position="after">
+                <field name="currency_id"/>
+            </xpath>
+        </field>
+    </record>
+     <record model="ir.ui.view" id="purchase_order_geosoft_custom_tree2">
+        <field name="name">view.purchase.order.geosoft.custom.tree2</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='partner_id']" position="after">
+                <field name="currency_id"/>
+            </xpath>
+        </field>
+    </record>
+     <record model="ir.ui.view" id="purchase_order_geosoft_custom_form">
+        <field name="name">view.purchase.order.geosoft.custom.form</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form[1]/sheet[1]/group[1]/group[2]/field[@name='date_order']" position="after">
+                <field name="account_analytic_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
