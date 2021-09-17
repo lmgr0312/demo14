@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="social_instagram_backend_assets" inherit_id="web.assets_backend">
+        <xpath expr="//script[contains(@src, '/social/static/src/js/social_post_formatter_mixin.js')]" position="after">
+            <script type="text/javascript" src="/social_instagram/static/src/js/social_post_formatter_mixin.js"/>
+        </xpath>
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/social_instagram/static/src/scss/social_instagram.scss"/>
+            <script type="text/javascript" src="/social_instagram/static/src/js/stream_post_instagram_comments.js"/>    
+            <script type="text/javascript" src="/social_instagram/static/src/js/stream_post_kanban_controller.js"/>            
+            <script type="text/javascript" src="/social_instagram/static/src/js/stream_post_kanban_renderer.js"/>
+        </xpath>
+    </template>
+</odoo>
